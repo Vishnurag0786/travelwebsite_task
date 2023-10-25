@@ -2758,6 +2758,9 @@ background-color: #FFF1DA;
     width: 70px !important;
     height: 0px;
   }
+  .imgover:before {
+    top: 3.5rem !important;
+  }
 }
 @media(min-width:1200px) {
   .card-img-topn {
@@ -2796,3 +2799,25 @@ background-color: #FFF1DA;
   padding-bottom: 50px;
 }
 }
+
+.imgover {
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+.imgover:before {
+  content: '';
+  position: absolute;
+  right: -6.9375rem;
+  top: 2.7rem;
+  width: 20rem;
+  height: 0.8125rem;
+  background-image: url(../images/imgover.png);
+  background-size: contain;
+  z-index: -1;
+}
+@media(max-width:360px) {
+  .imgover:before {
+    right: -4rem;
+  }
+  }
